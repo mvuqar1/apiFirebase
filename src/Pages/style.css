@@ -1,14 +1,14 @@
 .item-list {
-    display: flex;
-    justify-content: space-between;
-    border: black solid 1px;
-    margin: 5px;
-    padding: 5px;
-    width: 80%;
-    align-items: center;
-    margin-bottom: 10px; /* Добавлено */
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* добавлено */
+  justify-content: space-between;
+  border: black solid 1px;
+  margin: 5px;
+  padding: 5px;
+  width: 80%;
+  align-items: center;
+  margin-bottom: 10px;
+}
   .item-list.header {
     font-weight: bold;
   }
@@ -23,15 +23,17 @@
     background-color: #f9a826;
     border: none;
     color: white;
-    padding: 10px;
+    padding: 5px; /* изменено с 10px */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 5px;
+    font-size: 14px; /* изменено с 16px */
+    margin: 2px; /* изменено с 5px */
     cursor: pointer;
-    margin-bottom: 0; /* Добавлено */
+    margin-bottom: 0;
   }
+  
+  
   
   .edit-btn:hover,
   .delete-btn:hover {
@@ -54,5 +56,42 @@
   
   .add-page-link:hover {
     background-color: #c9840a;
+  }
+  @media (max-width: 600px) {
+    .item-list p {
+      width: 50%;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  
+    .edit-btn,
+    .delete-btn {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .add-page-link {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .item-list p {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .edit-btn,
+    .delete-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .add-page-link {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+    }
   }
   
