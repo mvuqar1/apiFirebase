@@ -1,0 +1,58 @@
+.item-list {
+    display: flex;
+    justify-content: space-between;
+    border: black solid 1px;
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 10px; /* Добавлено */
+  }
+  
+  .item-list.header {
+    font-weight: bold;
+  }
+  
+  .item-list p {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color: #f9a826;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    margin-bottom: 0; /* Добавлено */
+  }
+  
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background-color: #c9840a;
+  }
+  
+  .add-page-link {
+    background-color: #f9a826;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 20px; /* Добавлено */
+    cursor: pointer;
+  }
+  
+  .add-page-link:hover {
+    background-color: #c9840a;
+  }
+  
